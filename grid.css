@@ -1,0 +1,18 @@
+.contenedor {
+    display: grid;
+    /*grid-template-columns: 100px 100px 100px; se especifica la cantidad de espacio que ocupara
+    la columna en este ejemplo acomoda en 2 columnas las rejillas de 100px cada una
+de izquierda a derecha y sobra un espacio ya que el contenedor tiene un maximo de 1000px
+de ancho tambien se pueden espscificar las filas con grid-template-row y tambien con
+pixeles*/
+/*para dividir un espacio de manera mas exacta y colocar en dichos espacios nuestros
+elementos tenemos una propieadad que se llama "fr" lo cual le estamos diciendo
+al programa que un elemento ocupe una fraccion del contenedor ya sea en columna o fila
+ */
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 200px 1fr 1fr; se puede utilizar tambien de esta manera
+    en la cual la prima columna sera de 200px con respecto al contenedor y el espacio
+    restante del contenedor se dividira en fracciones para las demas columnas*/
+    grid-template-rows: 150px 300px;
+    grid-gap: 20px;/* le da un esapcio de separacion entre cada una de las rejillas*/
+}
